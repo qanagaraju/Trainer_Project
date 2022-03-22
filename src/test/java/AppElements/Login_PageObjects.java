@@ -45,6 +45,7 @@ public class Login_PageObjects {
 			Assert.assertFalse(false);
 		}
 		
+		/*
 		try {
 			
 			String userMessage = user_message.getText();
@@ -54,7 +55,7 @@ public class Login_PageObjects {
 			e.printStackTrace();
 		}
 		
-		
+		*/
 		
 		
 		
