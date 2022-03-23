@@ -1,46 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-22T19:59:26 IST" name="Default suite" finished-at="2022-03-22T19:59:30 IST" duration-ms="3839">
+  <suite started-at="2022-03-23T20:25:54 IST" name="Default suite" finished-at="2022-03-23T20:26:13 IST" duration-ms="19694">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@52e6fdee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@14dd9eb7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-03-22T19:59:26 IST" name="Default test" finished-at="2022-03-22T19:59:30 IST" duration-ms="3839">
+    <test started-at="2022-03-23T20:25:54 IST" name="Default test" finished-at="2022-03-23T20:26:13 IST" duration-ms="19694">
       <class name="StepDefinitions.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:StepDefinitions.TestRunner@52e6fdee]" started-at="2022-03-22T19:59:26 IST" name="setUpClass" finished-at="2022-03-22T19:59:27 IST" duration-ms="948" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:StepDefinitions.TestRunner@14dd9eb7]" started-at="2022-03-23T20:25:54 IST" name="setUpClass" finished-at="2022-03-23T20:25:55 IST" duration-ms="996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@52e6fdee]" started-at="2022-03-22T19:59:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-22T19:59:27 IST" duration-ms="400" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@14dd9eb7]" started-at="2022-03-23T20:25:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-23T20:26:06 IST" duration-ms="11260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User search samsung products"]]>
+                <![CDATA["verify valid login credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Amazon Product Search]"]]>
+                <![CDATA["Optional[Login Test]"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "StepDefinitions.LoginService.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "StepDefinitions.LoginService.driver" is null
-at StepDefinitions.LoginService.closeBrowser(LoginService.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.TestRunner@52e6fdee]" started-at="2022-03-22T19:59:27 IST" name="tearDownClass" finished-at="2022-03-22T19:59:30 IST" duration-ms="2428" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@14dd9eb7]" started-at="2022-03-23T20:26:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-23T20:26:11 IST" duration-ms="4714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[vefiry home page links]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.TestRunner@14dd9eb7]" started-at="2022-03-23T20:26:11 IST" name="tearDownClass" finished-at="2022-03-23T20:26:13 IST" duration-ms="2654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

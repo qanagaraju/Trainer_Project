@@ -5,8 +5,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import AppElements.Login_PageObjects;
-import AppUtilities.BrowserDriver;
 import AppUtilities.Property_Loader;
+import Config.BrowserDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
@@ -18,20 +18,23 @@ import io.cucumber.java.en.When;
 public class LoginService {
 	
 	static WebDriver driver;
-	static BrowserDriver browser = new BrowserDriver();
+	
 	static Property_Loader prop = new Property_Loader();
 	static Login_PageObjects loginpage;
 	
 	@BeforeStep
 	public void setupSuite() {
-		loginpage = PageFactory.initElements(driver, Login_PageObjects.class);
+		loginpage = PageFactory.initElements(BrowserDriver.getCurrentDriver(), Login_PageObjects.class);
 	}
 	
 	
 	@Given("user launch browser")
 	public void user_launch_browser() {
 		
-		driver = browser.startBrowser(prop.getbrowerType(), prop.geturl());
+		BrowserDriver.getCurrentDriver("chrome").get("http://www.mycontactform.com");
+		
+		
+		//driver = browser.startBrowser(prop.getbrowerType(), prop.geturl());
 	  
 	}
 	
@@ -68,11 +71,6 @@ public class LoginService {
 	
 
 	
-	@After
-	public void closeBrowser() {
-		
-		driver.close();
-	}
 	
 	
 	

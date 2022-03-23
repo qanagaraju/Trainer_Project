@@ -7,12 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserDriver {
+public class BrowserFactory {
 	
 	
 	static WebDriver driver;
 	
-	public  WebDriver startBrowser(String browsertype,String appurl) {
+	public static  WebDriver startBrowser(String browsertype) {
 		
 		if(browsertype.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -26,7 +26,7 @@ public class BrowserDriver {
 		}
 		
 		
-		driver.get(appurl);
+		
 		driver.manage().window().maximize();
 		
 		
